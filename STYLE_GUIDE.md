@@ -668,7 +668,9 @@ design-system/
 - **Send button**: Bottom margin for better alignment, white text in dark mode
 
 #### Bill Detail Page
-- **Background hierarchy**: Page uses surface.white, main bill section uses surface.base (lighter), summary section uses surface.alt (darker)
+- **Background consistency**: Page background uses surface.white to match main page, header uses surface.base
+- **Container hierarchy**: Main bill section uses surface.base (lighter), summary section uses surface.alt (darker) for visual separation
+- **Border styling**: Bill container uses gray border instead of blue for subtle appearance
 - **Text contrast**: Summary and subject text uses dark colors (#111827) in dark mode for better readability against darker backgrounds
 - **Color consistency**: All text elements use hardcoded colors with explicit .dark & overrides instead of CSS variables for reliable theming
 

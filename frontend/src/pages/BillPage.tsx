@@ -15,10 +15,14 @@ const BillContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   background: ${tokens.colors.surface.base};
-  border: 1px solid ${tokens.colors.primary};
+  border: 1px solid ${tokens.colors.gray[200]};
   border-radius: ${tokens.radii.lg};
   padding: ${tokens.spacing[6]};
   box-shadow: ${tokens.shadows.e1};
+  
+  .dark & {
+    background: ${tokens.colors.surface.base};
+  }
 `;
 
 const BillHeader = styled.div`

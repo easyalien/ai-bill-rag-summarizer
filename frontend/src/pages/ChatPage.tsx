@@ -45,7 +45,7 @@ const SourcesPanel = styled.aside<{ $isOpen: boolean }>`
 const WelcomeMessage = styled.div`
   padding: ${tokens.spacing[8]};
   text-align: center;
-  background: ${tokens.colors.surface.base};
+  background: ${tokens.colors.surface.white};
 `;
 
 const WelcomeTitle = styled.h2`
