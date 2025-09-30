@@ -175,7 +175,7 @@ documents = []
 # Check if the database exists
 if not os.path.exists(persist_dir):
     print("Creating new Chroma DB...")
-    documents = chunk_text_with_semantic('./text-docs/bill.txt', ollama_emb)
+    documents = chunk_text_with_semantic('./text-docs/article.txt', ollama_emb)
     # documents = chunk_xml_bill(
     #     './rag-docs/BILLS-119hr4544ih.xml', ollama_emb, max_chunk_size=2048)
     print(len(documents))

@@ -9,13 +9,14 @@ import { api, mockData } from '../services/api';
 const PageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 `;
 
 const MainContent = styled.main`
   flex: 1;
   display: flex;
   overflow: hidden;
+  min-height: 0;
 `;
 
 const ChatSection = styled.div`
