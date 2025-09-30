@@ -5,7 +5,7 @@ const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api/
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 30000,
+  timeout: 90000,
   headers: {
     'Content-Type': 'application/json',
   },
@@ -30,7 +30,7 @@ export interface SearchFilters {
 }
 
 export interface SearchResult {
-  bills: Bill[];
+  bills: string[];
   total: number;
   page: number;
   limit: number;
@@ -68,8 +68,8 @@ export const api = {
     return response.data;
   },
   
-  async getBill(billId: string): Promise<Bill> {
-    const response = await apiClient.get(`/bills/${billId}`);
+  async getBill(collectionName: string): Promise<Bill> {
+    const response = await apiClient.get(`/bill/${collectionName}`);
     return response.data;
   },
   
